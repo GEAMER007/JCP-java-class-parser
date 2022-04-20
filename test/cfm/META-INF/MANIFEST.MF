@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: MrCrayfishFurnitureMod
+MixinConfigs: cfm.mixins.json
+Implementation-Version: 7.0.0-pre22-1.16.3
+Specification-Vendor: MrCrayfish
+Specification-Title: MrCrayfish's Furniture Mod
+Implementation-Timestamp: 2021-06-10T23:13:30+0930
+Specification-Version: 1
+Implementation-Vendor: MrCrayfish
+

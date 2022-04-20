@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[34,)"
+license="GPLv3"
+issueTrackerURL="https://github.com/MrCrayfish/MrCrayfishFurnitureMod/issues"
+
+[[mods]]
+modId="cfm"
+version="7.0.0-pre22"
+displayName="MrCrayfish's Furniture Mod"
+updateJSONURL="https://mrcrayfish.com/modupdatejson?id=cfm"
+displayURL="https://mrcrayfish.com/mods?id=cfm"
+logoFile="furniture.png"
+credits="The people who helped me when I first started creating mods. I wouldn't be here without them!"
+authors="MrCrayfish"
+description="MrCrayfish's Furniture Mod is all about adding functioning furniture and decorations. This mod currently adds over eighty unique blocks and is continuely growing with new updates."
+
+[[dependencies.cfm]]
+    modId="forge"
+    mandatory=true
+    versionRange="[34.1.1,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.cfm]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.3,)"
+    ordering="NONE"
+    side="BOTH"
+
+[modproperties.cfm]
+    catalogueItemIcon="cfm:stripped_oak_chair"
+    configuredBackground="minecraft:textures/block/stripped_oak_log.png"

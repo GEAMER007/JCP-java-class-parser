@@ -1,0 +1,3761 @@
+[
+    {
+        "td": [
+            "aaload",
+            {
+                "@data-sort-value": "50",
+                "#text": "32"
+            },
+            "0011 0010",
+            "",
+            "arrayref, index → value",
+            "load onto the stack a reference from an array"
+        ]
+    },
+    {
+        "td": [
+            "aastore",
+            {
+                "@data-sort-value": "83",
+                "#text": "53"
+            },
+            "0101 0011",
+            "",
+            "arrayref, index, value →",
+            "store a reference in an array"
+        ]
+    },
+    {
+        "td": [
+            "aconst_null",
+            {
+                "@data-sort-value": "1",
+                "#text": "01"
+            },
+            "0000 0001",
+            "",
+            "→ null",
+            {
+                "i": "null",
+                "#text": [
+                    "push a",
+                    "reference onto the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "aload",
+            {
+                "@data-sort-value": "25",
+                "#text": "19"
+            },
+            "0001 1001",
+            "1: index",
+            "→ objectref",
+            {
+                "i": "#index",
+                "#text": "load a reference onto the stack from a local variable"
+            }
+        ]
+    },
+    {
+        "td": [
+            "aload_0",
+            {
+                "@data-sort-value": "42",
+                "#text": "2a"
+            },
+            "0010 1010",
+            "",
+            "→ objectref",
+            "load a reference onto the stack from local variable 0"
+        ]
+    },
+    {
+        "td": [
+            "aload_1",
+            {
+                "@data-sort-value": "43",
+                "#text": "2b"
+            },
+            "0010 1011",
+            "",
+            "→ objectref",
+            "load a reference onto the stack from local variable 1"
+        ]
+    },
+    {
+        "td": [
+            "aload_2",
+            {
+                "@data-sort-value": "44",
+                "#text": "2c"
+            },
+            "0010 1100",
+            "",
+            "→ objectref",
+            "load a reference onto the stack from local variable 2"
+        ]
+    },
+    {
+        "td": [
+            "aload_3",
+            {
+                "@data-sort-value": "45",
+                "#text": "2d"
+            },
+            "0010 1101",
+            "",
+            "→ objectref",
+            "load a reference onto the stack from local variable 3"
+        ]
+    },
+    {
+        "td": [
+            "anewarray",
+            {
+                "@data-sort-value": "189",
+                "#text": "bd"
+            },
+            "1011 1101",
+            "2: indexbyte1, indexbyte2",
+            "count → arrayref",
+            {
+                "i": [
+                    "count",
+                    "index"
+                ],
+                "style": {
+                    "@data-mw-deduplicate": "TemplateStyles:r886049734",
+                    "#text": ".mw-parser-output .monospaced{font-family:monospace,monospace}"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "create a new array of references of length",
+                    "and component type identified by the class reference",
+                    "(",
+                    ") in the constant pool"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "areturn",
+            {
+                "@data-sort-value": "176",
+                "#text": "b0"
+            },
+            "1011 0000",
+            "",
+            "objectref → [empty]",
+            "return a reference from a method"
+        ]
+    },
+    {
+        "td": [
+            "arraylength",
+            {
+                "@data-sort-value": "190",
+                "#text": "be"
+            },
+            "1011 1110",
+            "",
+            "arrayref → length",
+            "get the length of an array"
+        ]
+    },
+    {
+        "td": [
+            "astore",
+            {
+                "@data-sort-value": "58",
+                "#text": "3a"
+            },
+            "0011 1010",
+            "1: index",
+            "objectref →",
+            {
+                "i": "#index",
+                "#text": "store a reference into a local variable"
+            }
+        ]
+    },
+    {
+        "td": [
+            "astore_0",
+            {
+                "@data-sort-value": "75",
+                "#text": "4b"
+            },
+            "0100 1011",
+            "",
+            "objectref →",
+            "store a reference into local variable 0"
+        ]
+    },
+    {
+        "td": [
+            "astore_1",
+            {
+                "@data-sort-value": "76",
+                "#text": "4c"
+            },
+            "0100 1100",
+            "",
+            "objectref →",
+            "store a reference into local variable 1"
+        ]
+    },
+    {
+        "td": [
+            "astore_2",
+            {
+                "@data-sort-value": "77",
+                "#text": "4d"
+            },
+            "0100 1101",
+            "",
+            "objectref →",
+            "store a reference into local variable 2"
+        ]
+    },
+    {
+        "td": [
+            "astore_3",
+            {
+                "@data-sort-value": "78",
+                "#text": "4e"
+            },
+            "0100 1110",
+            "",
+            "objectref →",
+            "store a reference into local variable 3"
+        ]
+    },
+    {
+        "td": [
+            "athrow",
+            {
+                "@data-sort-value": "191",
+                "#text": "bf"
+            },
+            "1011 1111",
+            "",
+            "objectref → [empty], objectref",
+            "throws an error or exception (notice that the rest of the stack is cleared, leaving only a reference to the Throwable)"
+        ]
+    },
+    {
+        "td": [
+            "baload",
+            {
+                "@data-sort-value": "51",
+                "#text": "33"
+            },
+            "0011 0011",
+            "",
+            "arrayref, index → value",
+            "load a byte or Boolean value from an array"
+        ]
+    },
+    {
+        "td": [
+            "bastore",
+            {
+                "@data-sort-value": "84",
+                "#text": "54"
+            },
+            "0101 0100",
+            "",
+            "arrayref, index, value →",
+            "store a byte or Boolean value into an array"
+        ]
+    },
+    {
+        "td": [
+            "bipush",
+            {
+                "@data-sort-value": "16",
+                "#text": "10"
+            },
+            "0001 0000",
+            "1: byte",
+            "→ value",
+            {
+                "i": [
+                    "byte",
+                    "value"
+                ],
+                "#text": [
+                    "push a",
+                    "onto the stack as an integer"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "breakpoint",
+            {
+                "@data-sort-value": "202",
+                "#text": "ca"
+            },
+            "1100 1010",
+            "",
+            "",
+            "reserved for breakpoints in Java debuggers; should not appear in any class file"
+        ]
+    },
+    {
+        "td": [
+            "caload",
+            {
+                "@data-sort-value": "52",
+                "#text": "34"
+            },
+            "0011 0100",
+            "",
+            "arrayref, index → value",
+            "load a char from an array"
+        ]
+    },
+    {
+        "td": [
+            "castore",
+            {
+                "@data-sort-value": "85",
+                "#text": "55"
+            },
+            "0101 0101",
+            "",
+            "arrayref, index, value →",
+            "store a char into an array"
+        ]
+    },
+    {
+        "td": [
+            "checkcast",
+            {
+                "@data-sort-value": "192",
+                "#text": "c0"
+            },
+            "1100 0000",
+            "2: indexbyte1, indexbyte2",
+            "objectref → objectref",
+            {
+                "i": [
+                    "objectref",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "checks whether an",
+                    "is of a certain type, the class reference of which is in the constant pool at",
+                    "(",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "d2f",
+            {
+                "@data-sort-value": "144",
+                "#text": "90"
+            },
+            "1001 0000",
+            "",
+            "value → result",
+            {
+                "a": [
+                    {
+                        "@href": "/wiki/Double-precision_floating-point_format",
+                        "@title": "Double-precision floating-point format",
+                        "#text": "double"
+                    },
+                    {
+                        "@href": "/wiki/Single-precision_floating-point_format",
+                        "@title": "Single-precision floating-point format",
+                        "#text": "float"
+                    }
+                ],
+                "#text": [
+                    "convert a",
+                    "to a"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "d2i",
+            {
+                "@data-sort-value": "142",
+                "#text": "8e"
+            },
+            "1000 1110",
+            "",
+            "value → result",
+            "convert a double to an int"
+        ]
+    },
+    {
+        "td": [
+            "d2l",
+            {
+                "@data-sort-value": "143",
+                "#text": "8f"
+            },
+            "1000 1111",
+            "",
+            "value → result",
+            "convert a double to a long"
+        ]
+    },
+    {
+        "td": [
+            "dadd",
+            {
+                "@data-sort-value": "99",
+                "#text": "63"
+            },
+            "0110 0011",
+            "",
+            "value1, value2 → result",
+            "add two doubles"
+        ]
+    },
+    {
+        "td": [
+            "daload",
+            {
+                "@data-sort-value": "49",
+                "#text": "31"
+            },
+            "0011 0001",
+            "",
+            "arrayref, index → value",
+            "load a double from an array"
+        ]
+    },
+    {
+        "td": [
+            "dastore",
+            {
+                "@data-sort-value": "82",
+                "#text": "52"
+            },
+            "0101 0010",
+            "",
+            "arrayref, index, value →",
+            "store a double into an array"
+        ]
+    },
+    {
+        "td": [
+            "dcmpg",
+            {
+                "@data-sort-value": "152",
+                "#text": "98"
+            },
+            "1001 1000",
+            "",
+            "value1, value2 → result",
+            "compare two doubles, 1 on NaN"
+        ]
+    },
+    {
+        "td": [
+            "dcmpl",
+            {
+                "@data-sort-value": "151",
+                "#text": "97"
+            },
+            "1001 0111",
+            "",
+            "value1, value2 → result",
+            "compare two doubles, -1 on NaN"
+        ]
+    },
+    {
+        "td": [
+            "dconst_0",
+            {
+                "@data-sort-value": "14",
+                "#text": "0e"
+            },
+            "0000 1110",
+            "",
+            "→ 0.0",
+            {
+                "i": [
+                    "0.0",
+                    "double"
+                ],
+                "#text": [
+                    "push the constant",
+                    "(a",
+                    ") onto the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "dconst_1",
+            {
+                "@data-sort-value": "15",
+                "#text": "0f"
+            },
+            "0000 1111",
+            "",
+            "→ 1.0",
+            {
+                "i": [
+                    "1.0",
+                    "double"
+                ],
+                "#text": [
+                    "push the constant",
+                    "(a",
+                    ") onto the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ddiv",
+            {
+                "@data-sort-value": "111",
+                "#text": "6f"
+            },
+            "0110 1111",
+            "",
+            "value1, value2 → result",
+            "divide two doubles"
+        ]
+    },
+    {
+        "td": [
+            "dload",
+            {
+                "@data-sort-value": "24",
+                "#text": "18"
+            },
+            "0001 1000",
+            "1: index",
+            "→ value",
+            {
+                "i": [
+                    "value",
+                    "#index"
+                ],
+                "#text": [
+                    "load a double",
+                    "from a local variable"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "dload_0",
+            {
+                "@data-sort-value": "38",
+                "#text": "26"
+            },
+            "0010 0110",
+            "",
+            "→ value",
+            "load a double from local variable 0"
+        ]
+    },
+    {
+        "td": [
+            "dload_1",
+            {
+                "@data-sort-value": "39",
+                "#text": "27"
+            },
+            "0010 0111",
+            "",
+            "→ value",
+            "load a double from local variable 1"
+        ]
+    },
+    {
+        "td": [
+            "dload_2",
+            {
+                "@data-sort-value": "40",
+                "#text": "28"
+            },
+            "0010 1000",
+            "",
+            "→ value",
+            "load a double from local variable 2"
+        ]
+    },
+    {
+        "td": [
+            "dload_3",
+            {
+                "@data-sort-value": "41",
+                "#text": "29"
+            },
+            "0010 1001",
+            "",
+            "→ value",
+            "load a double from local variable 3"
+        ]
+    },
+    {
+        "td": [
+            "dmul",
+            {
+                "@data-sort-value": "107",
+                "#text": "6b"
+            },
+            "0110 1011",
+            "",
+            "value1, value2 → result",
+            "multiply two doubles"
+        ]
+    },
+    {
+        "td": [
+            "dneg",
+            {
+                "@data-sort-value": "119",
+                "#text": "77"
+            },
+            "0111 0111",
+            "",
+            "value → result",
+            "negate a double"
+        ]
+    },
+    {
+        "td": [
+            "drem",
+            {
+                "@data-sort-value": "115",
+                "#text": "73"
+            },
+            "0111 0011",
+            "",
+            "value1, value2 → result",
+            "get the remainder from a division between two doubles"
+        ]
+    },
+    {
+        "td": [
+            "dreturn",
+            {
+                "@data-sort-value": "175",
+                "#text": "af"
+            },
+            "1010 1111",
+            "",
+            "value → [empty]",
+            "return a double from a method"
+        ]
+    },
+    {
+        "td": [
+            "dstore",
+            {
+                "@data-sort-value": "57",
+                "#text": "39"
+            },
+            "0011 1001",
+            "1: index",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "#index"
+                ],
+                "#text": [
+                    "store a double",
+                    "into a local variable"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "dstore_0",
+            {
+                "@data-sort-value": "71",
+                "#text": "47"
+            },
+            "0100 0111",
+            "",
+            "value →",
+            "store a double into local variable 0"
+        ]
+    },
+    {
+        "td": [
+            "dstore_1",
+            {
+                "@data-sort-value": "72",
+                "#text": "48"
+            },
+            "0100 1000",
+            "",
+            "value →",
+            "store a double into local variable 1"
+        ]
+    },
+    {
+        "td": [
+            "dstore_2",
+            {
+                "@data-sort-value": "73",
+                "#text": "49"
+            },
+            "0100 1001",
+            "",
+            "value →",
+            "store a double into local variable 2"
+        ]
+    },
+    {
+        "td": [
+            "dstore_3",
+            {
+                "@data-sort-value": "74",
+                "#text": "4a"
+            },
+            "0100 1010",
+            "",
+            "value →",
+            "store a double into local variable 3"
+        ]
+    },
+    {
+        "td": [
+            "dsub",
+            {
+                "@data-sort-value": "103",
+                "#text": "67"
+            },
+            "0110 0111",
+            "",
+            "value1, value2 → result",
+            "subtract a double from another"
+        ]
+    },
+    {
+        "td": [
+            "dup",
+            {
+                "@data-sort-value": "89",
+                "#text": "59"
+            },
+            "0101 1001",
+            "",
+            "value → value, value",
+            "duplicate the value on top of the stack"
+        ]
+    },
+    {
+        "td": [
+            "dup_x1",
+            {
+                "@data-sort-value": "90",
+                "#text": "5a"
+            },
+            "0101 1010",
+            "",
+            "value2, value1 → value1, value2, value1",
+            "insert a copy of the top value into the stack two values from the top. value1 and value2 must not be of the type double or long."
+        ]
+    },
+    {
+        "td": [
+            "dup_x2",
+            {
+                "@data-sort-value": "91",
+                "#text": "5b"
+            },
+            "0101 1011",
+            "",
+            "value3, value2, value1 → value1, value3, value2, value1",
+            "insert a copy of the top value into the stack two (if value2 is double or long it takes up the entry of value3, too) or three values (if value2 is neither double nor long) from the top"
+        ]
+    },
+    {
+        "td": [
+            "dup2",
+            {
+                "@data-sort-value": "92",
+                "#text": "5c"
+            },
+            "0101 1100",
+            "",
+            "{value2, value1} → {value2, value1}, {value2, value1}",
+            "duplicate top two stack words (two values, if value1 is not double nor long; a single value, if value1 is double or long)"
+        ]
+    },
+    {
+        "td": [
+            "dup2_x1",
+            {
+                "@data-sort-value": "93",
+                "#text": "5d"
+            },
+            "0101 1101",
+            "",
+            "value3, {value2, value1} → {value2, value1}, value3, {value2, value1}",
+            "duplicate two words and insert beneath third word (see explanation above)"
+        ]
+    },
+    {
+        "td": [
+            "dup2_x2",
+            {
+                "@data-sort-value": "94",
+                "#text": "5e"
+            },
+            "0101 1110",
+            "",
+            "{value4, value3}, {value2, value1} → {value2, value1}, {value4, value3}, {value2, value1}",
+            "duplicate two words and insert beneath fourth word"
+        ]
+    },
+    {
+        "td": [
+            "f2d",
+            {
+                "@data-sort-value": "141",
+                "#text": "8d"
+            },
+            "1000 1101",
+            "",
+            "value → result",
+            "convert a float to a double"
+        ]
+    },
+    {
+        "td": [
+            "f2i",
+            {
+                "@data-sort-value": "139",
+                "#text": "8b"
+            },
+            "1000 1011",
+            "",
+            "value → result",
+            "convert a float to an int"
+        ]
+    },
+    {
+        "td": [
+            "f2l",
+            {
+                "@data-sort-value": "140",
+                "#text": "8c"
+            },
+            "1000 1100",
+            "",
+            "value → result",
+            "convert a float to a long"
+        ]
+    },
+    {
+        "td": [
+            "fadd",
+            {
+                "@data-sort-value": "98",
+                "#text": "62"
+            },
+            "0110 0010",
+            "",
+            "value1, value2 → result",
+            "add two floats"
+        ]
+    },
+    {
+        "td": [
+            "faload",
+            {
+                "@data-sort-value": "48",
+                "#text": "30"
+            },
+            "0011 0000",
+            "",
+            "arrayref, index → value",
+            "load a float from an array"
+        ]
+    },
+    {
+        "td": [
+            "fastore",
+            {
+                "@data-sort-value": "81",
+                "#text": "51"
+            },
+            "0101 0001",
+            "",
+            "arrayref, index, value →",
+            "store a float in an array"
+        ]
+    },
+    {
+        "td": [
+            "fcmpg",
+            {
+                "@data-sort-value": "150",
+                "#text": "96"
+            },
+            "1001 0110",
+            "",
+            "value1, value2 → result",
+            "compare two floats, 1 on NaN"
+        ]
+    },
+    {
+        "td": [
+            "fcmpl",
+            {
+                "@data-sort-value": "149",
+                "#text": "95"
+            },
+            "1001 0101",
+            "",
+            "value1, value2 → result",
+            "compare two floats, -1 on NaN"
+        ]
+    },
+    {
+        "td": [
+            "fconst_0",
+            {
+                "@data-sort-value": "11",
+                "#text": "0b"
+            },
+            "0000 1011",
+            "",
+            "→ 0.0f",
+            {
+                "i": "0.0f",
+                "#text": [
+                    "push",
+                    "on the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fconst_1",
+            {
+                "@data-sort-value": "12",
+                "#text": "0c"
+            },
+            "0000 1100",
+            "",
+            "→ 1.0f",
+            {
+                "i": "1.0f",
+                "#text": [
+                    "push",
+                    "on the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fconst_2",
+            {
+                "@data-sort-value": "13",
+                "#text": "0d"
+            },
+            "0000 1101",
+            "",
+            "→ 2.0f",
+            {
+                "i": "2.0f",
+                "#text": [
+                    "push",
+                    "on the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fdiv",
+            {
+                "@data-sort-value": "110",
+                "#text": "6e"
+            },
+            "0110 1110",
+            "",
+            "value1, value2 → result",
+            "divide two floats"
+        ]
+    },
+    {
+        "td": [
+            "fload",
+            {
+                "@data-sort-value": "23",
+                "#text": "17"
+            },
+            "0001 0111",
+            "1: index",
+            "→ value",
+            {
+                "i": [
+                    "value",
+                    "#index"
+                ],
+                "#text": [
+                    "load a float",
+                    "from a local variable"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fload_0",
+            {
+                "@data-sort-value": "34",
+                "#text": "22"
+            },
+            "0010 0010",
+            "",
+            "→ value",
+            {
+                "i": "value",
+                "#text": [
+                    "load a float",
+                    "from local variable 0"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fload_1",
+            {
+                "@data-sort-value": "35",
+                "#text": "23"
+            },
+            "0010 0011",
+            "",
+            "→ value",
+            {
+                "i": "value",
+                "#text": [
+                    "load a float",
+                    "from local variable 1"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fload_2",
+            {
+                "@data-sort-value": "36",
+                "#text": "24"
+            },
+            "0010 0100",
+            "",
+            "→ value",
+            {
+                "i": "value",
+                "#text": [
+                    "load a float",
+                    "from local variable 2"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fload_3",
+            {
+                "@data-sort-value": "37",
+                "#text": "25"
+            },
+            "0010 0101",
+            "",
+            "→ value",
+            {
+                "i": "value",
+                "#text": [
+                    "load a float",
+                    "from local variable 3"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fmul",
+            {
+                "@data-sort-value": "106",
+                "#text": "6a"
+            },
+            "0110 1010",
+            "",
+            "value1, value2 → result",
+            "multiply two floats"
+        ]
+    },
+    {
+        "td": [
+            "fneg",
+            {
+                "@data-sort-value": "118",
+                "#text": "76"
+            },
+            "0111 0110",
+            "",
+            "value → result",
+            "negate a float"
+        ]
+    },
+    {
+        "td": [
+            "frem",
+            {
+                "@data-sort-value": "114",
+                "#text": "72"
+            },
+            "0111 0010",
+            "",
+            "value1, value2 → result",
+            "get the remainder from a division between two floats"
+        ]
+    },
+    {
+        "td": [
+            "freturn",
+            {
+                "@data-sort-value": "174",
+                "#text": "ae"
+            },
+            "1010 1110",
+            "",
+            "value → [empty]",
+            "return a float"
+        ]
+    },
+    {
+        "td": [
+            "fstore",
+            {
+                "@data-sort-value": "56",
+                "#text": "38"
+            },
+            "0011 1000",
+            "1: index",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "#index"
+                ],
+                "#text": [
+                    "store a float",
+                    "into a local variable"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fstore_0",
+            {
+                "@data-sort-value": "67",
+                "#text": "43"
+            },
+            "0100 0011",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store a float",
+                    "into local variable 0"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fstore_1",
+            {
+                "@data-sort-value": "68",
+                "#text": "44"
+            },
+            "0100 0100",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store a float",
+                    "into local variable 1"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fstore_2",
+            {
+                "@data-sort-value": "69",
+                "#text": "45"
+            },
+            "0100 0101",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store a float",
+                    "into local variable 2"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fstore_3",
+            {
+                "@data-sort-value": "70",
+                "#text": "46"
+            },
+            "0100 0110",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store a float",
+                    "into local variable 3"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "fsub",
+            {
+                "@data-sort-value": "102",
+                "#text": "66"
+            },
+            "0110 0110",
+            "",
+            "value1, value2 → result",
+            "subtract two floats"
+        ]
+    },
+    {
+        "td": [
+            "getfield",
+            {
+                "@data-sort-value": "180",
+                "#text": "b4"
+            },
+            "1011 0100",
+            "2: indexbyte1, indexbyte2",
+            "objectref → value",
+            {
+                "i": [
+                    "value",
+                    "objectref",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "get a field",
+                    "of an object",
+                    ", where the field is identified by field reference in the constant pool",
+                    "(",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "getstatic",
+            {
+                "@data-sort-value": "178",
+                "#text": "b2"
+            },
+            "1011 0010",
+            "2: indexbyte1, indexbyte2",
+            "→ value",
+            {
+                "i": [
+                    "value",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "get a static field",
+                    "of a class, where the field is identified by field reference in the constant pool",
+                    "(",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "goto",
+            {
+                "@data-sort-value": "167",
+                "#text": "a7"
+            },
+            "1010 0111",
+            "2: branchbyte1, branchbyte2",
+            "[no change]",
+            {
+                "i": "branchoffset",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "goes to another instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "goto_w",
+            {
+                "@data-sort-value": "200",
+                "#text": "c8"
+            },
+            "1100 1000",
+            "4: branchbyte1, branchbyte2, branchbyte3, branchbyte4",
+            "[no change]",
+            {
+                "i": "branchoffset",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 24 | branchbyte2 << 16 | branchbyte3 << 8 | branchbyte4"
+                },
+                "#text": [
+                    "goes to another instruction at",
+                    "(signed int constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "i2b",
+            {
+                "@data-sort-value": "145",
+                "#text": "91"
+            },
+            "1001 0001",
+            "",
+            "value → result",
+            "convert an int into a byte"
+        ]
+    },
+    {
+        "td": [
+            "i2c",
+            {
+                "@data-sort-value": "146",
+                "#text": "92"
+            },
+            "1001 0010",
+            "",
+            "value → result",
+            "convert an int into a character"
+        ]
+    },
+    {
+        "td": [
+            "i2d",
+            {
+                "@data-sort-value": "135",
+                "#text": "87"
+            },
+            "1000 0111",
+            "",
+            "value → result",
+            "convert an int into a double"
+        ]
+    },
+    {
+        "td": [
+            "i2f",
+            {
+                "@data-sort-value": "134",
+                "#text": "86"
+            },
+            "1000 0110",
+            "",
+            "value → result",
+            "convert an int into a float"
+        ]
+    },
+    {
+        "td": [
+            "i2l",
+            {
+                "@data-sort-value": "133",
+                "#text": "85"
+            },
+            "1000 0101",
+            "",
+            "value → result",
+            "convert an int into a long"
+        ]
+    },
+    {
+        "td": [
+            "i2s",
+            {
+                "@data-sort-value": "147",
+                "#text": "93"
+            },
+            "1001 0011",
+            "",
+            "value → result",
+            "convert an int into a short"
+        ]
+    },
+    {
+        "td": [
+            "iadd",
+            {
+                "@data-sort-value": "96",
+                "#text": "60"
+            },
+            "0110 0000",
+            "",
+            "value1, value2 → result",
+            "add two ints"
+        ]
+    },
+    {
+        "td": [
+            "iaload",
+            {
+                "@data-sort-value": "46",
+                "#text": "2e"
+            },
+            "0010 1110",
+            "",
+            "arrayref, index → value",
+            "load an int from an array"
+        ]
+    },
+    {
+        "td": [
+            "iand",
+            {
+                "@data-sort-value": "126",
+                "#text": "7e"
+            },
+            "0111 1110",
+            "",
+            "value1, value2 → result",
+            "perform a bitwise AND on two integers"
+        ]
+    },
+    {
+        "td": [
+            "iastore",
+            {
+                "@data-sort-value": "79",
+                "#text": "4f"
+            },
+            "0100 1111",
+            "",
+            "arrayref, index, value →",
+            "store an int into an array"
+        ]
+    },
+    {
+        "td": [
+            "iconst_m1",
+            {
+                "@data-sort-value": "2",
+                "#text": "02"
+            },
+            "0000 0010",
+            "",
+            "→ -1",
+            "load the int value −1 onto the stack"
+        ]
+    },
+    {
+        "td": [
+            "iconst_0",
+            {
+                "@data-sort-value": "3",
+                "#text": "03"
+            },
+            "0000 0011",
+            "",
+            "→ 0",
+            "load the int value 0 onto the stack"
+        ]
+    },
+    {
+        "td": [
+            "iconst_1",
+            {
+                "@data-sort-value": "4",
+                "#text": "04"
+            },
+            "0000 0100",
+            "",
+            "→ 1",
+            "load the int value 1 onto the stack"
+        ]
+    },
+    {
+        "td": [
+            "iconst_2",
+            {
+                "@data-sort-value": "5",
+                "#text": "05"
+            },
+            "0000 0101",
+            "",
+            "→ 2",
+            "load the int value 2 onto the stack"
+        ]
+    },
+    {
+        "td": [
+            "iconst_3",
+            {
+                "@data-sort-value": "6",
+                "#text": "06"
+            },
+            "0000 0110",
+            "",
+            "→ 3",
+            "load the int value 3 onto the stack"
+        ]
+    },
+    {
+        "td": [
+            "iconst_4",
+            {
+                "@data-sort-value": "7",
+                "#text": "07"
+            },
+            "0000 0111",
+            "",
+            "→ 4",
+            "load the int value 4 onto the stack"
+        ]
+    },
+    {
+        "td": [
+            "iconst_5",
+            {
+                "@data-sort-value": "8",
+                "#text": "08"
+            },
+            "0000 1000",
+            "",
+            "→ 5",
+            "load the int value 5 onto the stack"
+        ]
+    },
+    {
+        "td": [
+            "idiv",
+            {
+                "@data-sort-value": "108",
+                "#text": "6c"
+            },
+            "0110 1100",
+            "",
+            "value1, value2 → result",
+            "divide two integers"
+        ]
+    },
+    {
+        "td": [
+            "if_acmpeq",
+            {
+                "@data-sort-value": "165",
+                "#text": "a5"
+            },
+            "1010 0101",
+            "2: branchbyte1, branchbyte2",
+            "value1, value2 →",
+            {
+                "i": "branchoffset",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if references are equal, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "if_acmpne",
+            {
+                "@data-sort-value": "166",
+                "#text": "a6"
+            },
+            "1010 0110",
+            "2: branchbyte1, branchbyte2",
+            "value1, value2 →",
+            {
+                "i": "branchoffset",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if references are not equal, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "if_icmpeq",
+            {
+                "@data-sort-value": "159",
+                "#text": "9f"
+            },
+            "1001 1111",
+            "2: branchbyte1, branchbyte2",
+            "value1, value2 →",
+            {
+                "i": "branchoffset",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if ints are equal, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "if_icmpge",
+            {
+                "@data-sort-value": "162",
+                "#text": "a2"
+            },
+            "1010 0010",
+            "2: branchbyte1, branchbyte2",
+            "value1, value2 →",
+            {
+                "i": [
+                    "value1",
+                    "value2",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is greater than or equal to",
+                    ", branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "if_icmpgt",
+            {
+                "@data-sort-value": "163",
+                "#text": "a3"
+            },
+            "1010 0011",
+            "2: branchbyte1, branchbyte2",
+            "value1, value2 →",
+            {
+                "i": [
+                    "value1",
+                    "value2",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is greater than",
+                    ", branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "if_icmple",
+            {
+                "@data-sort-value": "164",
+                "#text": "a4"
+            },
+            "1010 0100",
+            "2: branchbyte1, branchbyte2",
+            "value1, value2 →",
+            {
+                "i": [
+                    "value1",
+                    "value2",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is less than or equal to",
+                    ", branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "if_icmplt",
+            {
+                "@data-sort-value": "161",
+                "#text": "a1"
+            },
+            "1010 0001",
+            "2: branchbyte1, branchbyte2",
+            "value1, value2 →",
+            {
+                "i": [
+                    "value1",
+                    "value2",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is less than",
+                    ", branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "if_icmpne",
+            {
+                "@data-sort-value": "160",
+                "#text": "a0"
+            },
+            "1010 0000",
+            "2: branchbyte1, branchbyte2",
+            "value1, value2 →",
+            {
+                "i": "branchoffset",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if ints are not equal, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ifeq",
+            {
+                "@data-sort-value": "153",
+                "#text": "99"
+            },
+            "1001 1001",
+            "2: branchbyte1, branchbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is 0, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ifge",
+            {
+                "@data-sort-value": "156",
+                "#text": "9c"
+            },
+            "1001 1100",
+            "2: branchbyte1, branchbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is greater than or equal to 0, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ifgt",
+            {
+                "@data-sort-value": "157",
+                "#text": "9d"
+            },
+            "1001 1101",
+            "2: branchbyte1, branchbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is greater than 0, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ifle",
+            {
+                "@data-sort-value": "158",
+                "#text": "9e"
+            },
+            "1001 1110",
+            "2: branchbyte1, branchbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is less than or equal to 0, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "iflt",
+            {
+                "@data-sort-value": "155",
+                "#text": "9b"
+            },
+            "1001 1011",
+            "2: branchbyte1, branchbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is less than 0, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ifne",
+            {
+                "@data-sort-value": "154",
+                "#text": "9a"
+            },
+            "1001 1010",
+            "2: branchbyte1, branchbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is not 0, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ifnonnull",
+            {
+                "@data-sort-value": "199",
+                "#text": "c7"
+            },
+            "1100 0111",
+            "2: branchbyte1, branchbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is not null, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ifnull",
+            {
+                "@data-sort-value": "198",
+                "#text": "c6"
+            },
+            "1100 0110",
+            "2: branchbyte1, branchbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "branchoffset"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "if",
+                    "is null, branch to instruction at",
+                    "(signed short constructed from unsigned bytes",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "iinc",
+            {
+                "@data-sort-value": "132",
+                "#text": "84"
+            },
+            "1000 0100",
+            "2: index, const",
+            "[No change]",
+            {
+                "i": [
+                    "#index",
+                    "const"
+                ],
+                "#text": [
+                    "increment local variable",
+                    "by signed byte"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "iload",
+            {
+                "@data-sort-value": "21",
+                "#text": "15"
+            },
+            "0001 0101",
+            "1: index",
+            "→ value",
+            {
+                "i": [
+                    "value",
+                    "#index"
+                ],
+                "#text": [
+                    "load an int",
+                    "from a local variable"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "iload_0",
+            {
+                "@data-sort-value": "26",
+                "#text": "1a"
+            },
+            "0001 1010",
+            "",
+            "→ value",
+            {
+                "i": "value",
+                "#text": [
+                    "load an int",
+                    "from local variable 0"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "iload_1",
+            {
+                "@data-sort-value": "27",
+                "#text": "1b"
+            },
+            "0001 1011",
+            "",
+            "→ value",
+            {
+                "i": "value",
+                "#text": [
+                    "load an int",
+                    "from local variable 1"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "iload_2",
+            {
+                "@data-sort-value": "28",
+                "#text": "1c"
+            },
+            "0001 1100",
+            "",
+            "→ value",
+            {
+                "i": "value",
+                "#text": [
+                    "load an int",
+                    "from local variable 2"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "iload_3",
+            {
+                "@data-sort-value": "29",
+                "#text": "1d"
+            },
+            "0001 1101",
+            "",
+            "→ value",
+            {
+                "i": "value",
+                "#text": [
+                    "load an int",
+                    "from local variable 3"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "impdep1",
+            {
+                "@data-sort-value": "254",
+                "#text": "fe"
+            },
+            "1111 1110",
+            "",
+            "",
+            "reserved for implementation-dependent operations within debuggers; should not appear in any class file"
+        ]
+    },
+    {
+        "td": [
+            "impdep2",
+            {
+                "@data-sort-value": "255",
+                "#text": "ff"
+            },
+            "1111 1111",
+            "",
+            "",
+            "reserved for implementation-dependent operations within debuggers; should not appear in any class file"
+        ]
+    },
+    {
+        "td": [
+            "imul",
+            {
+                "@data-sort-value": "104",
+                "#text": "68"
+            },
+            "0110 1000",
+            "",
+            "value1, value2 → result",
+            "multiply two integers"
+        ]
+    },
+    {
+        "td": [
+            "ineg",
+            {
+                "@data-sort-value": "116",
+                "#text": "74"
+            },
+            "0111 0100",
+            "",
+            "value → result",
+            "negate int"
+        ]
+    },
+    {
+        "td": [
+            "instanceof",
+            {
+                "@data-sort-value": "193",
+                "#text": "c1"
+            },
+            "1100 0001",
+            "2: indexbyte1, indexbyte2",
+            "objectref → result",
+            {
+                "i": [
+                    "objectref",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "determines if an object",
+                    "is of a given type, identified by class reference",
+                    "in constant pool (",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "invokedynamic",
+            {
+                "@data-sort-value": "186",
+                "#text": "ba"
+            },
+            "1011 1010",
+            "4: indexbyte1, indexbyte2, 0, 0",
+            "[arg1, arg2, ...] → result",
+            {
+                "i": "index",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "invokes a dynamic method and puts the result on the stack (might be void); the method is identified by method reference",
+                    "in constant pool (",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "invokeinterface",
+            {
+                "@data-sort-value": "185",
+                "#text": "b9"
+            },
+            "1011 1001",
+            "4: indexbyte1, indexbyte2, count, 0",
+            "objectref, [arg1, arg2, ...] → result",
+            {
+                "i": [
+                    "objectref",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "invokes an interface method on object",
+                    "and puts the result on the stack (might be void); the interface method is identified by method reference",
+                    "in constant pool (",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "invokespecial",
+            {
+                "@data-sort-value": "183",
+                "#text": "b7"
+            },
+            "1011 0111",
+            "2: indexbyte1, indexbyte2",
+            "objectref, [arg1, arg2, ...] → result",
+            {
+                "i": [
+                    "objectref",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "invoke instance method on object",
+                    "and puts the result on the stack (might be void); the method is identified by method reference",
+                    "in constant pool (",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "invokestatic",
+            {
+                "@data-sort-value": "184",
+                "#text": "b8"
+            },
+            "1011 1000",
+            "2: indexbyte1, indexbyte2",
+            "[arg1, arg2, ...] → result",
+            {
+                "i": "index",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "invoke a static method and puts the result on the stack (might be void); the method is identified by method reference",
+                    "in constant pool (",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "invokevirtual",
+            {
+                "@data-sort-value": "182",
+                "#text": "b6"
+            },
+            "1011 0110",
+            "2: indexbyte1, indexbyte2",
+            "objectref, [arg1, arg2, ...] → result",
+            {
+                "i": [
+                    "objectref",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "invoke virtual method on object",
+                    "and puts the result on the stack (might be void); the method is identified by method reference",
+                    "in constant pool (",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ior",
+            {
+                "@data-sort-value": "128",
+                "#text": "80"
+            },
+            "1000 0000",
+            "",
+            "value1, value2 → result",
+            "bitwise int OR"
+        ]
+    },
+    {
+        "td": [
+            "irem",
+            {
+                "@data-sort-value": "112",
+                "#text": "70"
+            },
+            "0111 0000",
+            "",
+            "value1, value2 → result",
+            "logical int remainder"
+        ]
+    },
+    {
+        "td": [
+            "ireturn",
+            {
+                "@data-sort-value": "172",
+                "#text": "ac"
+            },
+            "1010 1100",
+            "",
+            "value → [empty]",
+            "return an integer from a method"
+        ]
+    },
+    {
+        "td": [
+            "ishl",
+            {
+                "@data-sort-value": "120",
+                "#text": "78"
+            },
+            "0111 1000",
+            "",
+            "value1, value2 → result",
+            "int shift left"
+        ]
+    },
+    {
+        "td": [
+            "ishr",
+            {
+                "@data-sort-value": "122",
+                "#text": "7a"
+            },
+            "0111 1010",
+            "",
+            "value1, value2 → result",
+            "int arithmetic shift right"
+        ]
+    },
+    {
+        "td": [
+            "istore",
+            {
+                "@data-sort-value": "54",
+                "#text": "36"
+            },
+            "0011 0110",
+            "1: index",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "#index"
+                ],
+                "#text": [
+                    "store int",
+                    "into variable"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "istore_0",
+            {
+                "@data-sort-value": "59",
+                "#text": "3b"
+            },
+            "0011 1011",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store int",
+                    "into variable 0"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "istore_1",
+            {
+                "@data-sort-value": "60",
+                "#text": "3c"
+            },
+            "0011 1100",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store int",
+                    "into variable 1"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "istore_2",
+            {
+                "@data-sort-value": "61",
+                "#text": "3d"
+            },
+            "0011 1101",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store int",
+                    "into variable 2"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "istore_3",
+            {
+                "@data-sort-value": "62",
+                "#text": "3e"
+            },
+            "0011 1110",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store int",
+                    "into variable 3"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "isub",
+            {
+                "@data-sort-value": "100",
+                "#text": "64"
+            },
+            "0110 0100",
+            "",
+            "value1, value2 → result",
+            "int subtract"
+        ]
+    },
+    {
+        "td": [
+            "iushr",
+            {
+                "@data-sort-value": "124",
+                "#text": "7c"
+            },
+            "0111 1100",
+            "",
+            "value1, value2 → result",
+            "int logical shift right"
+        ]
+    },
+    {
+        "td": [
+            "ixor",
+            {
+                "@data-sort-value": "130",
+                "#text": "82"
+            },
+            "1000 0010",
+            "",
+            "value1, value2 → result",
+            "int xor"
+        ]
+    },
+    {
+        "td": [
+            {
+                "sup": {
+                    "@class": "reference plainlinks nourlexpansion",
+                    "@id": "ref_Deprecated",
+                    "a": {
+                        "@href": "#endnote_Deprecated",
+                        "#text": "†"
+                    }
+                },
+                "#text": "jsr"
+            },
+            {
+                "@data-sort-value": "168",
+                "#text": "a8"
+            },
+            "1010 1000",
+            "2: branchbyte1, branchbyte2",
+            "→ address",
+            {
+                "i": "branchoffset",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 8 | branchbyte2"
+                },
+                "#text": [
+                    "jump to subroutine at",
+                    "(signed short constructed from unsigned bytes",
+                    ") and place the return address on the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            {
+                "sup": {
+                    "@class": "reference plainlinks nourlexpansion",
+                    "@id": "ref_Deprecated",
+                    "a": {
+                        "@href": "#endnote_Deprecated",
+                        "#text": "†"
+                    }
+                },
+                "#text": "jsr_w"
+            },
+            {
+                "@data-sort-value": "201",
+                "#text": "c9"
+            },
+            "1100 1001",
+            "4: branchbyte1, branchbyte2, branchbyte3, branchbyte4",
+            "→ address",
+            {
+                "i": "branchoffset",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "branchbyte1 << 24 | branchbyte2 << 16 | branchbyte3 << 8 | branchbyte4"
+                },
+                "#text": [
+                    "jump to subroutine at",
+                    "(signed int constructed from unsigned bytes",
+                    ") and place the return address on the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "l2d",
+            {
+                "@data-sort-value": "138",
+                "#text": "8a"
+            },
+            "1000 1010",
+            "",
+            "value → result",
+            "convert a long to a double"
+        ]
+    },
+    {
+        "td": [
+            "l2f",
+            {
+                "@data-sort-value": "137",
+                "#text": "89"
+            },
+            "1000 1001",
+            "",
+            "value → result",
+            "convert a long to a float"
+        ]
+    },
+    {
+        "td": [
+            "l2i",
+            {
+                "@data-sort-value": "136",
+                "#text": "88"
+            },
+            "1000 1000",
+            "",
+            "value → result",
+            "convert a long to a int"
+        ]
+    },
+    {
+        "td": [
+            "ladd",
+            {
+                "@data-sort-value": "97",
+                "#text": "61"
+            },
+            "0110 0001",
+            "",
+            "value1, value2 → result",
+            "add two longs"
+        ]
+    },
+    {
+        "td": [
+            "laload",
+            {
+                "@data-sort-value": "47",
+                "#text": "2f"
+            },
+            "0010 1111",
+            "",
+            "arrayref, index → value",
+            "load a long from an array"
+        ]
+    },
+    {
+        "td": [
+            "land",
+            {
+                "@data-sort-value": "127",
+                "#text": "7f"
+            },
+            "0111 1111",
+            "",
+            "value1, value2 → result",
+            {
+                "a": {
+                    "@href": "/wiki/Bitwise_operation",
+                    "@title": "Bitwise operation",
+                    "#text": "bitwise"
+                },
+                "#text": "AND of two longs"
+            }
+        ]
+    },
+    {
+        "td": [
+            "lastore",
+            {
+                "@data-sort-value": "80",
+                "#text": "50"
+            },
+            "0101 0000",
+            "",
+            "arrayref, index, value →",
+            "store a long to an array"
+        ]
+    },
+    {
+        "td": [
+            "lcmp",
+            {
+                "@data-sort-value": "148",
+                "#text": "94"
+            },
+            "1001 0100",
+            "",
+            "value1, value2 → result",
+            "push 0 if the two longs are the same, 1 if value1 is greater than value2, -1 otherwise"
+        ]
+    },
+    {
+        "td": [
+            "lconst_0",
+            {
+                "@data-sort-value": "9",
+                "#text": "09"
+            },
+            "0000 1001",
+            "",
+            "→ 0L",
+            {
+                "i": [
+                    "0L",
+                    "long"
+                ],
+                "a": {
+                    "@href": "/wiki/Zero",
+                    "@class": "mw-redirect",
+                    "@title": "Zero",
+                    "#text": "zero"
+                },
+                "#text": [
+                    "push",
+                    "(the number",
+                    "with type",
+                    ") onto the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lconst_1",
+            {
+                "@data-sort-value": "10",
+                "#text": "0a"
+            },
+            "0000 1010",
+            "",
+            "→ 1L",
+            {
+                "i": [
+                    "1L",
+                    "long"
+                ],
+                "a": {
+                    "@href": "/wiki/One",
+                    "@class": "mw-redirect",
+                    "@title": "One",
+                    "#text": "one"
+                },
+                "#text": [
+                    "push",
+                    "(the number",
+                    "with type",
+                    ") onto the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ldc",
+            {
+                "@data-sort-value": "18",
+                "#text": "12"
+            },
+            "0001 0010",
+            "1: index",
+            "→ value",
+            {
+                "i": "#index",
+                "#text": [
+                    "push a constant",
+                    "from a constant pool (String, int, float, Class, java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, or a dynamically-computed constant) onto the stack"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ldc_w",
+            {
+                "@data-sort-value": "19",
+                "#text": "13"
+            },
+            "0001 0011",
+            "2: indexbyte1, indexbyte2",
+            "→ value",
+            {
+                "i": [
+                    "#index",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "push a constant",
+                    "from a constant pool (String, int, float, Class, java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, or a dynamically-computed constant) onto the stack (wide",
+                    "is constructed as",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ldc2_w",
+            {
+                "@data-sort-value": "20",
+                "#text": "14"
+            },
+            "0001 0100",
+            "2: indexbyte1, indexbyte2",
+            "→ value",
+            {
+                "i": [
+                    "#index",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "push a constant",
+                    "from a constant pool (double, long, or a dynamically-computed constant) onto the stack (wide",
+                    "is constructed as",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "ldiv",
+            {
+                "@data-sort-value": "109",
+                "#text": "6d"
+            },
+            "0110 1101",
+            "",
+            "value1, value2 → result",
+            "divide two longs"
+        ]
+    },
+    {
+        "td": [
+            "lload",
+            {
+                "@data-sort-value": "22",
+                "#text": "16"
+            },
+            "0001 0110",
+            "1: index",
+            "→ value",
+            {
+                "i": "#index",
+                "#text": "load a long value from a local variable"
+            }
+        ]
+    },
+    {
+        "td": [
+            "lload_0",
+            {
+                "@data-sort-value": "30",
+                "#text": "1e"
+            },
+            "0001 1110",
+            "",
+            "→ value",
+            "load a long value from a local variable 0"
+        ]
+    },
+    {
+        "td": [
+            "lload_1",
+            {
+                "@data-sort-value": "31",
+                "#text": "1f"
+            },
+            "0001 1111",
+            "",
+            "→ value",
+            "load a long value from a local variable 1"
+        ]
+    },
+    {
+        "td": [
+            "lload_2",
+            {
+                "@data-sort-value": "32",
+                "#text": "20"
+            },
+            "0010 0000",
+            "",
+            "→ value",
+            "load a long value from a local variable 2"
+        ]
+    },
+    {
+        "td": [
+            "lload_3",
+            {
+                "@data-sort-value": "33",
+                "#text": "21"
+            },
+            "0010 0001",
+            "",
+            "→ value",
+            "load a long value from a local variable 3"
+        ]
+    },
+    {
+        "td": [
+            "lmul",
+            {
+                "@data-sort-value": "105",
+                "#text": "69"
+            },
+            "0110 1001",
+            "",
+            "value1, value2 → result",
+            "multiply two longs"
+        ]
+    },
+    {
+        "td": [
+            "lneg",
+            {
+                "@data-sort-value": "117",
+                "#text": "75"
+            },
+            "0111 0101",
+            "",
+            "value → result",
+            "negate a long"
+        ]
+    },
+    {
+        "td": [
+            "lookupswitch",
+            {
+                "@data-sort-value": "171",
+                "#text": "ab"
+            },
+            "1010 1011",
+            "8+: <0–3 bytes padding>, defaultbyte1, defaultbyte2, defaultbyte3, defaultbyte4, npairs1, npairs2, npairs3, npairs4, match-offset pairs...",
+            "key →",
+            "a target address is looked up from a table using a key and execution continues from the instruction at that address"
+        ]
+    },
+    {
+        "td": [
+            "lor",
+            {
+                "@data-sort-value": "129",
+                "#text": "81"
+            },
+            "1000 0001",
+            "",
+            "value1, value2 → result",
+            "bitwise OR of two longs"
+        ]
+    },
+    {
+        "td": [
+            "lrem",
+            {
+                "@data-sort-value": "113",
+                "#text": "71"
+            },
+            "0111 0001",
+            "",
+            "value1, value2 → result",
+            "remainder of division of two longs"
+        ]
+    },
+    {
+        "td": [
+            "lreturn",
+            {
+                "@data-sort-value": "173",
+                "#text": "ad"
+            },
+            "1010 1101",
+            "",
+            "value → [empty]",
+            "return a long value"
+        ]
+    },
+    {
+        "td": [
+            "lshl",
+            {
+                "@data-sort-value": "121",
+                "#text": "79"
+            },
+            "0111 1001",
+            "",
+            "value1, value2 → result",
+            {
+                "i": [
+                    "value1",
+                    "value2"
+                ],
+                "#text": [
+                    "bitwise shift left of a long",
+                    "by int",
+                    "positions"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lshr",
+            {
+                "@data-sort-value": "123",
+                "#text": "7b"
+            },
+            "0111 1011",
+            "",
+            "value1, value2 → result",
+            {
+                "i": [
+                    "value1",
+                    "value2"
+                ],
+                "#text": [
+                    "bitwise shift right of a long",
+                    "by int",
+                    "positions"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lstore",
+            {
+                "@data-sort-value": "55",
+                "#text": "37"
+            },
+            "0011 0111",
+            "1: index",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "#index"
+                ],
+                "#text": [
+                    "store a long",
+                    "in a local variable"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lstore_0",
+            {
+                "@data-sort-value": "63",
+                "#text": "3f"
+            },
+            "0011 1111",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store a long",
+                    "in a local variable 0"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lstore_1",
+            {
+                "@data-sort-value": "64",
+                "#text": "40"
+            },
+            "0100 0000",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store a long",
+                    "in a local variable 1"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lstore_2",
+            {
+                "@data-sort-value": "65",
+                "#text": "41"
+            },
+            "0100 0001",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store a long",
+                    "in a local variable 2"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lstore_3",
+            {
+                "@data-sort-value": "66",
+                "#text": "42"
+            },
+            "0100 0010",
+            "",
+            "value →",
+            {
+                "i": "value",
+                "#text": [
+                    "store a long",
+                    "in a local variable 3"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lsub",
+            {
+                "@data-sort-value": "101",
+                "#text": "65"
+            },
+            "0110 0101",
+            "",
+            "value1, value2 → result",
+            "subtract two longs"
+        ]
+    },
+    {
+        "td": [
+            "lushr",
+            {
+                "@data-sort-value": "125",
+                "#text": "7d"
+            },
+            "0111 1101",
+            "",
+            "value1, value2 → result",
+            {
+                "i": [
+                    "value1",
+                    "value2"
+                ],
+                "#text": [
+                    "bitwise shift right of a long",
+                    "by int",
+                    "positions, unsigned"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "lxor",
+            {
+                "@data-sort-value": "131",
+                "#text": "83"
+            },
+            "1000 0011",
+            "",
+            "value1, value2 → result",
+            "bitwise XOR of two longs"
+        ]
+    },
+    {
+        "td": [
+            "monitorenter",
+            {
+                "@data-sort-value": "194",
+                "#text": "c2"
+            },
+            "1100 0010",
+            "",
+            "objectref →",
+            "enter monitor for object (\\\"grab the lock\\\" – start of synchronized() section)"
+        ]
+    },
+    {
+        "td": [
+            "monitorexit",
+            {
+                "@data-sort-value": "195",
+                "#text": "c3"
+            },
+            "1100 0011",
+            "",
+            "objectref →",
+            "exit monitor for object (\\\"release the lock\\\" – end of synchronized() section)"
+        ]
+    },
+    {
+        "td": [
+            "multianewarray",
+            {
+                "@data-sort-value": "197",
+                "#text": "c5"
+            },
+            "1100 0101",
+            "3: indexbyte1, indexbyte2, dimensions",
+            "count1, [count2,...] → arrayref",
+            {
+                "i": [
+                    "dimensions",
+                    "index",
+                    "count1",
+                    "count2"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "create a new array of",
+                    "dimensions of type identified by class reference in constant pool",
+                    "(",
+                    "); the sizes of each dimension is identified by",
+                    ", [",
+                    ", etc.]"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "new",
+            {
+                "@data-sort-value": "187",
+                "#text": "bb"
+            },
+            "1011 1011",
+            "2: indexbyte1, indexbyte2",
+            "→ objectref",
+            {
+                "i": "index",
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "create new object of type identified by class reference in constant pool",
+                    "(",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "newarray",
+            {
+                "@data-sort-value": "188",
+                "#text": "bc"
+            },
+            "1011 1100",
+            "1: atype",
+            "count → arrayref",
+            {
+                "i": [
+                    "count",
+                    "atype"
+                ],
+                "#text": [
+                    "create new array with",
+                    "elements of primitive type identified by"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "nop",
+            {
+                "@data-sort-value": "0",
+                "#text": "00"
+            },
+            "0000 0000",
+            "",
+            "[No change]",
+            "perform no operation"
+        ]
+    },
+    {
+        "td": [
+            "pop",
+            {
+                "@data-sort-value": "87",
+                "#text": "57"
+            },
+            "0101 0111",
+            "",
+            "value →",
+            "discard the top value on the stack"
+        ]
+    },
+    {
+        "td": [
+            "pop2",
+            {
+                "@data-sort-value": "88",
+                "#text": "58"
+            },
+            "0101 1000",
+            "",
+            "{value2, value1} →",
+            "discard the top two values on the stack (or one value, if it is a double or long)"
+        ]
+    },
+    {
+        "td": [
+            "putfield",
+            {
+                "@data-sort-value": "181",
+                "#text": "b5"
+            },
+            "1011 0101",
+            "2: indexbyte1, indexbyte2",
+            "objectref, value →",
+            {
+                "i": [
+                    "value",
+                    "objectref",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "set field to",
+                    "in an object",
+                    ", where the field is identified by a field reference",
+                    "in constant pool (",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "putstatic",
+            {
+                "@data-sort-value": "179",
+                "#text": "b3"
+            },
+            "1011 0011",
+            "2: indexbyte1, indexbyte2",
+            "value →",
+            {
+                "i": [
+                    "value",
+                    "index"
+                ],
+                "link": {
+                    "@rel": "mw-deduplicated-inline-style",
+                    "@href": "mw-data:TemplateStyles:r886049734"
+                },
+                "span": {
+                    "@class": "monospaced",
+                    "#text": "indexbyte1 << 8 | indexbyte2"
+                },
+                "#text": [
+                    "set static field to",
+                    "in a class, where the field is identified by a field reference",
+                    "in constant pool (",
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            {
+                "sup": {
+                    "@class": "reference plainlinks nourlexpansion",
+                    "@id": "ref_Deprecated",
+                    "a": {
+                        "@href": "#endnote_Deprecated",
+                        "#text": "���"
+                    }
+                },
+                "#text": "ret"
+            },
+            {
+                "@data-sort-value": "169",
+                "#text": "a9"
+            },
+            "1010 1001",
+            "1: index",
+            "[No change]",
+            {
+                "i": "#index",
+                "#text": [
+                    "continue execution from address taken from a local variable",
+                    "(the asymmetry with jsr is intentional)"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            "return",
+            {
+                "@data-sort-value": "177",
+                "#text": "b1"
+            },
+            "1011 0001",
+            "",
+            "→ [empty]",
+            "return void from method"
+        ]
+    },
+    {
+        "td": [
+            "saload",
+            {
+                "@data-sort-value": "53",
+                "#text": "35"
+            },
+            "0011 0101",
+            "",
+            "arrayref, index → value",
+            "load short from array"
+        ]
+    },
+    {
+        "td": [
+            "sastore",
+            {
+                "@data-sort-value": "86",
+                "#text": "56"
+            },
+            "0101 0110",
+            "",
+            "arrayref, index, value →",
+            "store short to array"
+        ]
+    },
+    {
+        "td": [
+            "sipush",
+            {
+                "@data-sort-value": "17",
+                "#text": "11"
+            },
+            "0001 0001",
+            "2: byte1, byte2",
+            "→ value",
+            {
+                "i": "value",
+                "#text": "push a short onto the stack as an integer"
+            }
+        ]
+    },
+    {
+        "td": [
+            "swap",
+            {
+                "@data-sort-value": "95",
+                "#text": "5f"
+            },
+            "0101 1111",
+            "",
+            "value2, value1 → value1, value2",
+            "swaps two top words on the stack (note that value1 and value2 must not be double or long)"
+        ]
+    },
+    {
+        "td": [
+            "tableswitch",
+            {
+                "@data-sort-value": "170",
+                "#text": "aa"
+            },
+            "1010 1010",
+            "16+: [0–3 bytes padding], defaultbyte1, defaultbyte2, defaultbyte3, defaultbyte4, lowbyte1, lowbyte2, lowbyte3, lowbyte4, highbyte1, highbyte2, highbyte3, highbyte4, jump offsets...",
+            "index →",
+            {
+                "i": "index",
+                "#text": "continue execution from an address in the table at offset"
+            }
+        ]
+    },
+    {
+        "td": [
+            "wide",
+            {
+                "@data-sort-value": "196",
+                "#text": "c4"
+            },
+            "1100 0100",
+            {
+                "br": [
+                    "",
+                    ""
+                ],
+                "#text": [
+                    "3/5: opcode, indexbyte1, indexbyte2",
+                    "or",
+                    "iinc, indexbyte1, indexbyte2, countbyte1, countbyte2"
+                ]
+            },
+            "[same as for corresponding instructions]",
+            {
+                "i": [
+                    "opcode",
+                    "opcode",
+                    "index",
+                    "index"
+                ],
+                "#text": [
+                    "execute",
+                    ", where",
+                    "is either iload, fload, aload, lload, dload, istore, fstore, astore, lstore, dstore, or ret, but assume the",
+                    "is 16 bit; or execute iinc, where the",
+                    "is 16 bits and the constant to increment by is a signed 16 bit short"
+                ]
+            }
+        ]
+    },
+    {
+        "td": [
+            {
+                "i": "(no name)"
+            },
+            {
+                "@data-sort-value": "203",
+                "#text": "cb-fd"
+            },
+            "",
+            "",
+            "",
+            "these values are currently unassigned for opcodes and are reserved for future use"
+        ]
+    }
+]

@@ -1,4 +1,5 @@
 var fs=require('fs');
+
 var typeParsers={
     "String":(value,refpool)=>refpool.push(1,...GetUInt16BE(value.length),...Buffer.from(value)),
     "ConstantMethodRef":(value,refpool,linkpool)=>refpool.push(10,...GetUInt16BE(linkpool.indexOf(value.constClass)),...GetUInt16BE(linkpool.indexOf(value.nameAndType))),
